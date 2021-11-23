@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: #f9f9f991;
+}
+/* NAVBAR */
+.navbarContainer {
+  display: flex;
+  padding: 24px 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkContainer {
+  display: none;
+}
+
+.linkContainer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.linkContainer li a {
+  text-decoration: none;
+  color: black;
+}
+
+.searchContainer .searchInput {
+  display: none;
+}
+
+.navbarContainer .logo {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.searchInput {
+  padding: 6px;
+  border-radius: 10px;
+  background-color: lightgray;
+  border: 0px solid grey;
+}
+*/ ::placeholder {
+  position: absolute;
+  left: 40px;
+}
+
+/* HEADER */
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 280px;
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 280px;
+  align-items: center;
+}
+
+.headerContainer h1 {
+  font-size: 28px;
+}
+
+.blue {
+  color: #174b86;
+}
+
+.headerContainer p {
+  font-family: sans-serif;
+  color: gray;
+}
+
+.headerContainer button {
+  font-family: sans-serif;
+  border: 1px solid #174b86;
+  background-color: #174b86;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 6px;
+}
+
+/* CONTENT */
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding: 1rem;
+}
+
+.imageContainer img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  border-radius: 15px;
+  position: relative;
+  background-color: white;
+  bottom: 4rem;
+  width: 90%;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textContainer h4 {
+  font-family: sans-serif;
+  color: #174b86;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.textContainer h2 {
+  margin-bottom: 20px;
+}
+
+.textContainer p {
+  font-family: sans-serif;
+  color: gray;
+  font-size: 14px;
+}
+
+.iconsContainer .fab {
+  padding: 0 15px;
+  color: grey;
+  font-size: 20px;
+}
+
+/* FEATURED_WRITERS */
+.featuredWritersContainer {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #174b86;
+  margin: 30px 16px;
+  color: white;
+}
+
+.featuredWritersContainer h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.writersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  justify-content: space-around;
+  font-family: sans-serif;
+}
+
+.writersContainer img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.writer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  justify-content: center;
+}
+
+.writer p {
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 650px) {
+  /* NAVBAR */
+  .navbarContainer {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .linkContainer {
+    display: initial;
+  }
+  .searchIcon {
+    position: relative;
+    color: grey;
+    right: -2rem;
+  }
+  .searchContainer .searchInput {
+    display: initial;
+  }
+  .toggle {
+    display: none;
+  }
+
+  /* HEADER */
+  .headerContainer {
+    margin-bottom: 30px;
+  }
+  .headerContainer h1 {
+    font-size: 36px;
+  }
+
+  /* CONTENT */
+  .contentContainer {
+    flex-direction: row;
+    height: 500px;
+    max-width: 1024px;
+    margin: auto;
+  }
+  .contentContainer .imageContainer {
+    width: 80%;
+    height: 10 0%;
+  }
+  .contentContainer .rightContainer {
+    width: 40%;
+  }
+  .contentContainer .rightContainer .textContainer {
+    width: 110%;
+    bottom: -44px;
+    right: 36px;
+    padding: 40px;
+  }
+  .textContainer h4 {
+    font-size: 16px;
+  }
+  .textContainer h2 {
+    font-size: 32px;
+  }
+  .textContainer p {
+    font-size: 16px;
+  }
+  .iconsContainer {
+    margin-top: 90px;
+  }
+
+  /* FEATURED_WRITERS */
+  .featuredWritersContainer {
+    max-width: 1024px;
+    margin: 40px 16px;
+  }
+  .featuredWritersContainer h2 {
+    margin: 30px 0;
+    font-size: 28px;
+  }
+  .writer {
+    width: 25%;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  /* FEATURED_WRITERS */
+  .featuredWritersContainer {
+    margin: 40px auto;
+  }
+}
